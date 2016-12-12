@@ -17,6 +17,7 @@
 package com.example.chat.Server;
 
 import android.app.Activity;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.HandlerThread;
@@ -61,6 +62,7 @@ public class Service extends Activity {
             case MESSAGE_PING:
                 String ping = (String) msg.obj;
                 mListViewArrayAdapter.add(ping);
+
                 break;
             case MESSAGE_PING_REPLY:
                 //String reply = (String) msg.obj;
@@ -88,6 +90,7 @@ public class Service extends Activity {
 
         mListViewArrayAdapter = new ArrayAdapter<String>(this, R.layout.message);
         mListView = (ListView) findViewById(R.id.ListView);
+
         mListView.setAdapter(mListViewArrayAdapter);
 
         /* Make all AllJoyn calls through a separate handler thread to prevent blocking the UI. */

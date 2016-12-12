@@ -31,9 +31,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void quit(View view){
         finish();
-        System.exit(0);
+        System.exit(0);.
     }
-
 
 
 }
