@@ -21,6 +21,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".activitys.ChatActivity"></activity>
+        <activity android:name=".Server.Service"></activity>
+        <activity android:name=".Client.Client"></activity>
     </application>
 
 </manifest>

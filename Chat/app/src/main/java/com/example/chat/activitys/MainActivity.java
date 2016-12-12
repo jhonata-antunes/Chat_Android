@@ -5,7 +5,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.chat.Client.Client;
 import com.example.chat.R;
+import com.example.chat.Server.Service;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,7 +20,15 @@ public class MainActivity extends AppCompatActivity {
     // Buttons
 
     public void chat(View view) {
-        Intent intent = new Intent(getApplicationContext(), ChatActivity.class);
+        Intent intent = new Intent(getApplicationContext(), Client.class);
         startActivity(intent);
     }
+
+    public void quit(View view){
+        finish();
+        System.exit(0);
+    }
+
+
+
 }
