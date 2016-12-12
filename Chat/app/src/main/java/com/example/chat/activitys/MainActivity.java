@@ -28,4 +28,12 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(), Service.class);
         startActivity(intent);
     }
+
+    public void quit(View view){
+        finish();
+        System.exit(0);
+    }
+
+
+
 }
