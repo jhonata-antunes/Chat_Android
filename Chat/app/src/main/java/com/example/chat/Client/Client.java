@@ -74,12 +74,12 @@ public class Client extends Activity {
             switch (msg.what) {
             case MESSAGE_PING:
                 String ping = (String) msg.obj;
-                mListViewArrayAdapter.add("Ping:  " + ping);
+                mListViewArrayAdapter.add(ping);
                 break;
             case MESSAGE_PING_REPLY:
-                String ret = (String) msg.obj;
-                mListViewArrayAdapter.add("Reply:  " + ret);
-                mEditText.setText("");
+                //String ret = (String) msg.obj;
+                //mListViewArrayAdapter.add("Reply:  " + ret);
+                //mEditText.setText("");
                 break;
             case MESSAGE_POST_TOAST:
                 Toast.makeText(getApplicationContext(), (String) msg.obj, Toast.LENGTH_LONG).show();
