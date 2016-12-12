@@ -26,8 +26,6 @@ import android.os.Message;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.inputmethod.EditorInfo;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
@@ -105,7 +103,7 @@ public class Client extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        setContentView(R.layout.activity_client);
 
         mListViewArrayAdapter = new ArrayAdapter<String>(this, R.layout.message);
         mListView = (ListView) findViewById(R.id.ListView);

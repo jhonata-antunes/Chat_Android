@@ -12,8 +12,8 @@
     tools:context="com.example.chat.activitys.MainActivity">
 
     <Button
-        android:text="Chat"
-        android:onClick="chat"
+        android:text="Enviar Mensagem"
+        android:onClick="client"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -22,13 +22,16 @@
         android:id="@+id/button" />
 
     <Button
-        android:text="Sobre"
+        android:text="Receber Mensagem"
+        android:onClick="server"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_alignLeft="@+id/button"
         android:layout_alignStart="@+id/button"
-        android:id="@+id/button2" />
+        android:id="@+id/button2"
+        android:layout_alignRight="@+id/button"
+        android:layout_alignEnd="@+id/button" />
 
     <Button
         android:text="Sair"
@@ -38,5 +41,7 @@
         android:layout_alignLeft="@+id/button2"
         android:layout_alignStart="@+id/button2"
         android:layout_marginTop="82dp"
-        android:id="@+id/button3" />
+        android:id="@+id/button3"
+        android:layout_alignRight="@+id/button2"
+        android:layout_alignEnd="@+id/button2" />
 </RelativeLayout>

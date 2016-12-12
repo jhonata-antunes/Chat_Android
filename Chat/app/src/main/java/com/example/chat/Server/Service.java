@@ -24,8 +24,6 @@ import android.os.Looper;
 import android.os.Message;
 import android.util.Log;
 import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -86,7 +84,7 @@ public class Service extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        setContentView(R.layout.activity_service);
 
         mListViewArrayAdapter = new ArrayAdapter<String>(this, R.layout.message);
         mListView = (ListView) findViewById(R.id.ListView);
