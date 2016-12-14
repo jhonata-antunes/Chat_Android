@@ -32,30 +32,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void about(View view) {
-        AlertDialog.Builder builder1 = new AlertDialog.Builder(getApplicationContext());
-        builder1.setMessage("Criado para a metéria de Redes de Computadores.\n" +
-                            "Desenvolvido por Adilson Torres e Jhonata Antunes.");
-        builder1.setCancelable(true);
-
-        builder1.setPositiveButton(
-                "Ok",
-                new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int id) {
-                        dialog.cancel();
-                    }
-                }
-        );
-
-        AlertDialog alert11 = builder1.create();
-        alert11.show();
-
-        //Intent intent = new Intent(getApplicationContext(), Client.class);
-        //startActivity(intent);
+        Intent intent = new Intent(getApplicationContext(), About.class);
+        startActivity(intent);
     }
 
     public void quit(View view){
         finish();
-        System.exit(0);.
+        System.exit(0);
     }
 
 
