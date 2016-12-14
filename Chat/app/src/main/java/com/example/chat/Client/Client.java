@@ -118,6 +118,7 @@ public class Client extends Activity {
                     Message msg = mBusHandler.obtainMessage(BusHandler.PING,
                                                             view.getText().toString());
                     mBusHandler.sendMessage(msg);
+                    mEditText.setText("");
                 }
                 return true;
             }
